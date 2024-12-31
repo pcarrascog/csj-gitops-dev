@@ -9,14 +9,7 @@ spec:
     - host: paulocarrasco.cl
       http:
         paths:
-          - path: /bar
-            pathType: Exact
-            backend:
-              service:
-                name:  click2call
-                port:
-                  number: 80
-          - path: /foo
+          - path: /
             pathType: Exact
             backend:
               service:
