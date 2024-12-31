@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-csj
+  namespace: csj
+
+spec:
+  rules:
+    - host: paulocarrasco.cl
+      http:
+        paths:
+          - path: /bar
+            pathType: Exact
+            backend:
+              service:
+                name:  click2call
+                port:
+                  number: 80
+          - path: /foo
+            pathType: Exact
+            backend:
+              service:
+                name:  click2call
+                port:
+                  number: 80
