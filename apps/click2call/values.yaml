@@ -106,24 +106,8 @@ tolerations: []
 affinity: {}
 
 configMapData:
-  ASPNETCORE_URLS: http://+:8080
-  # # DDS_ConnectionStrings__DefaultConnection: "server=10.23.80.12;port=3306;database=identity_adem;user=identity_adem;password=1Y.@V|vt(9y57UV:;"
-  # DDS_ConnectionStrings__DefaultConnection: "Server=BASIS-SRDEDB.drogdelsud.com.ar;Database=Adem-Transfers;User Id=Gestion-Transfer-Adem;Password=KR8exfRJ6y6jYcFZcLbW;TrustServerCertificate=True;"
-  # DDS_ConnectionStrings__DefaultConnectionDbTypeName: sqlserver
-  # DDS_ConnectionStrings__EventBus: "35.223.54.136"  
-  # DDS_ConnectionStrings__EventBusPort: ""
-  # DDS_RabbitMQSettings__MainQueue__ExchangeName: Novedades_transfer
-  # DDS_RabbitMQSettings__MainQueue__ExchangeType: fanout
-  # DDS_RabbitMQSettings__MainQueue__MensajeriaType: rabbitmq
-  # DDS_RabbitMQSettings__MainQueue__PrefetchCount: "50"
-  # DDS_RabbitMQSettings__MainQueue__PrefetchSize: "0"
-  # DDS_RabbitMQSettings__MainQueue__QueueName: Novedades_transfer_onpremise
-  # DDS_RabbitMQSettings__NewQueue__ExchangeName: Novedades_nuevotransfer
-  # DDS_RabbitMQSettings__NewQueue__ExchangeType: fanout
-  # DDS_RabbitMQSettings__NewQueue__MensajeriaType: rabbitmq
-  # DDS_RabbitMQSettings__NewQueue__PrefetchCount: "50"
-  # DDS_RabbitMQSettings__NewQueue__PrefetchSize: "0"
-  # DDS_RabbitMQSettings__NewQueue__QueueName: Novedades_nuevotransfer_onpremise
-
+  TOKEN_ID: "a5c443a0d3adc3617977759fbfcb781f"
+  TOKEN_TYPE: "plugin"
+  
 # configMapObject: [dds-logging]
 
