@@ -49,7 +49,7 @@ service:
   targetPort: 80
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations:
     kubernetes.io/ingress.class: ""
@@ -58,7 +58,7 @@ ingress:
     #kubernetes.io/ingress.class: "gce-internal"
     #kubernetes.io/ingress.allow-http: "false"
   hosts:
-    - host: dev.totalmagnesiano.com.ar
+    - host: api.clinicasanjavier.cl
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -108,6 +108,6 @@ affinity: {}
 configMapData:
   TOKEN_ID: "a5c443a0d3adc3617977759fbfcb781f"
   TOKEN_TYPE: "plugin"
-  
+
 # configMapObject: [dds-logging]
 
