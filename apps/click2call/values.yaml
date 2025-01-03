@@ -108,6 +108,15 @@ affinity: {}
 configMapData:
   TOKEN_ID: "a5c443a0d3adc3617977759fbfcb781f"
   TOKEN_TYPE: "plugin"
+  ENDPOINT_URL: "https://cloudpbx.netvoiss.cl/hodupbx_api/v1.4/api/info/serviceClick2Call"
+  DB_HOST: "clinicasanjavier.cl"              # Cambia esto por la IP o el hostname del servidor MySQL
+  DB_USER: "clinicasanjavier_click2call"      # Usuario de MySQL
+  DB_PASSWORD: "vwJz6kDqY@kb"                 # Contraseña de MySQL
+  DB_DATABASE: "clinicasanjavier_click2call"  # Nombre de la base de datos
 
 # configMapObject: [dds-logging]
 
+# export DB_HOST="clinicasanjavier.cl"              # Cambia esto por la IP o el hostname del servidor MySQL
+# export DB_USER="clinicasanjavier_click2call"      # Usuario de MySQL
+# export DB_PASSWORD="vwJz6kDqY@kb"                 # Contraseña de MySQL
+# export DB_DATABASE="clinicasanjavier_click2call"  # Nombre de la base de datos
