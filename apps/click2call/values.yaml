@@ -60,7 +60,7 @@ ingress:
     - host: api.clinicasanjavier.cl
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: Exact #ImplementationSpecific
   tls: []
     # - secretName: dds-b2b-tls
     #   hosts:
