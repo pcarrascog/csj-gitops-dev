@@ -60,7 +60,7 @@ ingress:
   hosts:
     - host: api.clinicasanjavier.cl
       paths:
-        - path: /
+        - path: /click2call
           pathType: ImplementationSpecific
   tls: []
     # - secretName: dds-b2b-tls
