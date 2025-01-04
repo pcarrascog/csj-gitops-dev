@@ -55,12 +55,11 @@ ingress:
     kubernetes.io/ingress.class: "traefik"
     # nginx.org/redirect-to-https: "true"
     # kubernetes.io/tls-acme: "true"
-    #kubernetes.io/ingress.class: "gce-internal"
-    #kubernetes.io/ingress.allow-http: "false"
+    kubernetes.io/ingress.allow-http: "false"
   hosts:
     - host: api.clinicasanjavier.cl
       paths:
-        - path: /click2call
+        - path: /
           pathType: ImplementationSpecific
   tls: []
     # - secretName: dds-b2b-tls
