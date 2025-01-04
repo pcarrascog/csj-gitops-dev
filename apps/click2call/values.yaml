@@ -120,3 +120,4 @@ configMapData:
 # export DB_USER="clinicasanjavier_click2call"      # Usuario de MySQL
 # export DB_PASSWORD="vwJz6kDqY@kb"                 # Contraseña de MySQL
 # export DB_DATABASE="clinicasanjavier_click2call"  # Nombre de la base de datos
+# export ENDPOINT_URL="https://cloudpbx.netvoiss.cl/hodupbx_api/v1.4/api/info/serviceClick2Call"
