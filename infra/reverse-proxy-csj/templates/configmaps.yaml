@@ -9,7 +9,7 @@ data:
     server {
       listen       80;
       listen  [::]:80;
-      server_name test-servicios-dev.delsud.com.ar;
+      server_name api-develop.clinicasanjavier.cl;
       server_tokens off;
 
       proxy_set_header Origin $http_origin;
@@ -38,7 +38,7 @@ data:
     server {
       listen       80;
       listen  [::]:80;
-      server_name   servicios-qas.delsud.com.ar;
+      server_name   api-dev.clinicasanjavier.cl;
       server_tokens off;
 
       proxy_set_header Origin $http_origin;
@@ -49,19 +49,16 @@ data:
       add_header Access-Control-Expose-Headers Date;
 
 
-      location /api/auth/ {
-        if ($request_method = OPTIONS ) {
-          add_header 'Access-Control-Max-Age' 86000;
-        }
-        proxy_pass http://dds-identity-adem-api.dds-ws/;
-        proxy_http_version 1.1;
+      # location /api/auth/ {
+      #   if ($request_method = OPTIONS ) {
+      #     add_header 'Access-Control-Max-Age' 86000;
+      #   }
+      #   proxy_pass http://dds-identity-adem-api.dds-ws/;
+      #   proxy_http_version 1.1;
+      # }
+
+      location / {
+        root  /usr/share/nginx/html;
       }
 
-      location /api/stockreadonlyadem/ {
-        if ($request_method = OPTIONS ) {
-          add_header 'Access-Control-Max-Age' 86000;
-        }
-        proxy_pass http://dds-stock-read-only-adem-api.dds-ws/;
-        proxy_http_version 1.1;
-      }
     }
