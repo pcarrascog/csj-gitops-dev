@@ -62,9 +62,9 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls: []
-    # - secretName: dds-b2b-tls
-    #   hosts:
-    #     - dds-b2b
+    - secretName: api.clinicasanjavier.cl-tls
+      hosts:
+       - api.clinicasanjavier.cl
 
 resources: # {}
   # We usually recommend not to specify default resources and to leave this as a conscious
