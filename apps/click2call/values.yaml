@@ -1,7 +1,7 @@
 # Default values for nginx.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
+# https://medium.com/@yakuphanbilgic3/how-to-set-up-ssl-tls-certificates-from-lets-encrypt-with-nginx-ingress-controller-and-9593b0eb8f23
 replicaCount: 1
 
 image:
