@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: infra/namespaces
-    repoURL: git@github.com:pcarrascog/csj-gitops.git
+    repoURL: git@github.com:pcarrascog/csj-gitops-dev.git
     targetRevision: HEAD
   syncPolicy:
     automated:
