@@ -56,6 +56,8 @@ ingress:
     # nginx.org/redirect-to-https: "true"
     # kubernetes.io/tls-acme: "true"
     kubernetes.io/ingress.allow-http: "false"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+
   hosts:
     - host: api.clinicasanjavier.cl
       paths:
