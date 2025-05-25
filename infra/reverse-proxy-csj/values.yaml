@@ -56,10 +56,10 @@ ingress:
     # nginx.org/client-max-body-size: "20M"
   hosts:
         
-    - host: api-dev.clinicasanjavier.cl
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
+    # - host: api-dev.clinicasanjavier.cl
+    #   paths:
+    #     - path: /
+    #       pathType: ImplementationSpecific
     - host: clsj-desarrollo
       paths:
         - path: /
