@@ -60,6 +60,10 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
+    - host: clsj-desarrollo
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
 
 
   tls: #[]
