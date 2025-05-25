@@ -21,7 +21,7 @@ data:
       # add_header Access-Control-Expose-Headers Date;
 
       location / {
-        proxy_pass http://nginx:80/;
+        proxy_pass http://web:80/;
         server_tokens off;
 
         proxy_set_header Origin $http_origin;
