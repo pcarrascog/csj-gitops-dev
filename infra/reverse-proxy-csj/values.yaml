@@ -64,7 +64,10 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-
+    - host: api-dev.devopschile.cl
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
 
   tls: #[]
    - secretName: api-dev.clinicasanjavier.cl-tls

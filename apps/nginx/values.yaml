@@ -49,7 +49,7 @@ service:
   targetPort: 80
 
 ingress:
-  enabled: true
+  enabled: false
   className: "traefik"
   annotations:
     kubernetes.io/ingress.class: "traefik"
