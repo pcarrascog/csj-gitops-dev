@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: infra/reverse-proxy-csj
-    repoURL: git@github.com:pcarrascog/csj-gitops.git
+    repoURL: git@github.com:pcarrascog/csj-gitops-dev.git
     targetRevision: HEAD
     helm:
       valueFiles:

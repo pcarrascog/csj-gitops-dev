@@ -49,10 +49,11 @@ ingress:
   enabled: true
   className: ""
   annotations: #{}
-    kubernetes.io/ingress.class: "nginx"
-    nginx.org/redirect-to-https: "true"
+    # kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/ingress.class: "traefik"
+    # nginx.org/redirect-to-https: "true"
     kubernetes.io/tls-acme: "true"
-    nginx.org/client-max-body-size: "20M"
+    # nginx.org/client-max-body-size: "20M"
   hosts:
         
     - host: api-dev.clinicasanjavier.cl
