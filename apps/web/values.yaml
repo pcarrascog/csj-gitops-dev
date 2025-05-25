@@ -50,11 +50,11 @@ service:
 
 ingress:
   enabled: false
-  # className: "traefik"
-  className: "nginx"
+  className: "traefik"
+  # className: "nginx"
   annotations:
-    # kubernetes.io/ingress.class: "traefik"
-    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/ingress.class: "traefik"
+    # kubernetes.io/ingress.class: "nginx"
 
     # nginx.org/redirect-to-https: "true"
     # kubernetes.io/tls-acme: "true"
