@@ -60,7 +60,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
     kubernetes.io/ingress.allow-http: "false"
   hosts:
-    - host: api.clinicasanjavier.cl
+    - host: api-dev.devopschile.cl
       paths:
         - path: /
           pathType: ImplementationSpecific
