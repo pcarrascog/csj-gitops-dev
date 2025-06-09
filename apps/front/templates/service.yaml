@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "gitops-dds-centros.fullname" . }}
+  labels:
+    {{- include "gitops-dds-centros.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port}} 
+      targetPort: {{ .Values.service.targetPort }}
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "gitops-dds-centros.selectorLabels" . | nindent 4 }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: web
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: web
+    app.kubernetes.io/version: 1.16.0
+    helm.sh/chart: web-0.1.0
+  name: web-nodeport
+  namespace: csj
+spec:
+  ports:
+  - name: http
+    nodePort: 31530
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app.kubernetes.io/instance: web
+    app.kubernetes.io/name: web
+  sessionAffinity: None
+  type: NodePort
