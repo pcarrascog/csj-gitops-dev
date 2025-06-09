@@ -19,12 +19,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app.kubernetes.io/instance: web
+    app.kubernetes.io/instance: front
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/name: web
+    app.kubernetes.io/name: front
     app.kubernetes.io/version: 1.16.0
-    helm.sh/chart: web-0.1.0
-  name: web-nodeport
+    helm.sh/chart: front-0.1.0
+  name: front-nodeport
   namespace: csj
 spec:
   ports:
@@ -34,7 +34,7 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app.kubernetes.io/instance: web
-    app.kubernetes.io/name: web
+    app.kubernetes.io/instance: front
+    app.kubernetes.io/name: front
   sessionAffinity: None
   type: NodePort
