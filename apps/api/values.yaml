@@ -8,7 +8,7 @@ image:
   repository: pcarrascog/api
   pullPolicy: IfNotPresent
   ## Overrides the image tag whose default is the chart appVersion.
-  tag: ac5b69a
+  tag: 1 #:ac5b69a
   
 imagePullSecrets: []
   # - name: regcred
