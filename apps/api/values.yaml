@@ -46,7 +46,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
-  targetPort: 80
+  targetPort: 3000
 
 ingress:
   enabled: false
@@ -109,13 +109,13 @@ affinity: {}
 
 configMapData:
   # DB_HOST=192.168.1.72
-  DB_HOST=mysql.paulocarrasco.cl
-  DB_USER=clsj
-  DB_PASSWORD=Paulo2801_
-  DB_NAME=clsj
-  DB_PORT=3306
-  PORT=3001
-  JWT_SECRET=WWxkc1ptTXlWbXBqYlZZd1dESjBiR1ZSUFQwPQ==
+  DB_HOST: mysql.paulocarrasco.cl
+  DB_USER: clsj
+  DB_PASSWORD: Paulo2801_
+  DB_NAME: clsj
+  DB_PORT: 3306
+  PORT: 3000
+  JWT_SECRET: WWxkc1ptTXlWbXBqYlZZd1dESjBiR1ZSUFQwPQ==
   # MONGO_DB_PORT=
   # MONGO_DB_HOST=192.168.1.86
   # MONGO_DB_NAME=123
