@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx #pcarrascog/api
+  repository: pcarrascog/api
   pullPolicy: IfNotPresent
   ## Overrides the image tag whose default is the chart appVersion.
-  tag: latest #4 #:ac5b69a
+  tag: 4 #:ac5b69a
   
 imagePullSecrets: []
   # - name: regcred
