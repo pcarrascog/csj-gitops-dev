@@ -108,4 +108,16 @@ tolerations: []
 affinity: {}
 
 configMapData:
-  TOKEN_ID: "1234567890abcdef1234567890abcdef"
+  # DB_HOST=192.168.1.72
+  DB_HOST=mysql.paulocarrasco.cl
+  DB_USER=clsj
+  DB_PASSWORD=Paulo2801_
+  DB_NAME=clsj
+  DB_PORT=3306
+  PORT=3001
+  JWT_SECRET=WWxkc1ptTXlWbXBqYlZZd1dESjBiR1ZSUFQwPQ==
+  # MONGO_DB_PORT=
+  # MONGO_DB_HOST=192.168.1.86
+  # MONGO_DB_NAME=123
+  # CERO_AI_BASE_URL=https://api.cero.ai/v1
+
