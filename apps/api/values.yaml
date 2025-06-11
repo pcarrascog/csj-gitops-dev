@@ -109,12 +109,12 @@ affinity: {}
 
 configMapData:
   # DB_HOST=192.168.1.72
-  DB_HOST: mysql.paulocarrasco.cl
-  DB_USER: clsj
-  DB_PASSWORD: Paulo2801_
-  DB_NAME: clsj
-  DB_PORT: 3306
-  PORT: 80
+  DB_HOST: "mysql.paulocarrasco.cl"
+  DB_USER: "clsj"
+  DB_PASSWORD: "Paulo2801_"
+  DB_NAME: "clsj"
+  DB_PORT: "3306"
+  PORT: "80"
   JWT_SECRET: WWxkc1ptTXlWbXBqYlZZd1dESjBiR1ZSUFQwPQ==
   # MONGO_DB_PORT=
   # MONGO_DB_HOST=192.168.1.86
